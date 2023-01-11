@@ -11,7 +11,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SummaryApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SummaryApplication.class, args);
+        try {
+
+            SpringApplication.run(SummaryApplication.class, args);
+        }catch (Exception e){
+            System.out.println(e);
+        }
     }
 
 }
