@@ -5,10 +5,12 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.js.summary.common.Result;
 import com.js.summary.common.utils.ResultUtils;
 import com.js.summary.entity.Summary;
+import com.js.summary.handler.TestHandler;
 import com.js.summary.service.SummaryService;
 import com.js.summary.mapper.SummaryMapper;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -19,6 +21,13 @@ import java.util.List;
 @Service
 public class SummaryServiceImpl extends ServiceImpl<SummaryMapper, Summary>
     implements SummaryService{
+
+    @Resource
+    private TestHandler testHandler;
+
+    public void getTestHandle(){
+        System.out.println(testHandler);
+    }
 
     @Override
     public Result<List<Long>> get() {
