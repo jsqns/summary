@@ -7,7 +7,11 @@ mybatis-plus:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
+<<<<<<< HEAD
     url: jdbc:mysql://localhost:3306/study?characterEncoding=utf-8&useSSL=false
+=======
+    url: jdbc:mysql://127.0.0.1:3306/study?characterEncoding=utf-8&useSSL=false
+>>>>>>> dev
     username: root
     password: 123456
 #####  swagger文档部分配置 ####
@@ -30,7 +34,7 @@ xxl:
   job:
     admin:
       ### xxl-job admin address list, such as "http://address" or "http://address01,http://address02"
-      addresses: http://175.178.166.27:8081/xxl-job-admin
+      addresses: http://127.0.0.1:8081/xxl-job-admin
     ### xxl-job executor address
     executor:
       address:
